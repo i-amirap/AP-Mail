@@ -1,0 +1,27 @@
+/* sweetAlert.css */
+
+.swal2-container {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+}
+
+.swal2-title {
+  color: var(--text-color) !important;
+}
+
+.swal2-popup {
+  background-color: var(--bg-color);
+}
+
+.my-actions {
+  direction: ltr;
+}
+
+.my-confirm , .my-confirm:hover {
+  background-color: #22901d;
+}
+
+.my-cancel , .my-cancel:hover {
+  background-color: #d33120;
+}
