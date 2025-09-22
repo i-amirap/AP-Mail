@@ -1,0 +1,19 @@
+/* var.css */
+
+:root {
+  --font-family: 'Vazir'; /* این مقدار از appSettings.fontFamily می‌آید */
+  --font-size: large; /* این مقدار از appSettings.fontSize می‌آید */
+  --theme-color: #2266cc;
+  --theme-color-rgb: 34, 102, 204;
+  --text-color-rgb: 28, 28, 28;
+  --bg-color: white;
+  --text-color: #1c1c1c;
+  --search-Place: transparent;
+  --multiOption: none;
+  --notMultiOption: flex;
+  --multiInp: none;
+  --multiItemBtns: inline-block;
+  --mobileMenu: none;
+  --mobileMulti: none;
+  --resetPass: none;
+}

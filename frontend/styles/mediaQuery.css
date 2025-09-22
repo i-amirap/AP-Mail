@@ -1,0 +1,85 @@
+/* mediaQuery.css */
+
+@media print {
+  html {
+    color-scheme: light !important;
+    --bg-color: white !important;
+    --text-color: #1c1c1c !important;
+  }
+
+  main {
+    background-color: #ebebeb !important;
+  }
+
+  .tools,
+  main > h4 {
+    display: none;
+  }
+
+  header {
+    visibility: hidden;
+  }
+
+  .pagination {
+    visibility: hidden;
+  }
+
+  .table-wrapper > center {
+    visibility: hidden;
+  }
+
+  .emkanat > button {
+    display: none !important;
+  }
+
+  table {
+    position: absolute;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .table-wrapper > center {
+    min-width: 600px !important;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .minAppName {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .appName {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .pagination {
+    gap: 0.5rem;
+  }
+
+  .pagesShower {
+    gap: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #searchInp:focus,
+  #searchInp:valid {
+    cursor: text;
+    width: 9rem !important;
+    border-color: var(--theme-color);
+  }
+}
+
+@media screen and (max-width: 325px) {
+  * {
+    display: none !important;
+  }
+}
