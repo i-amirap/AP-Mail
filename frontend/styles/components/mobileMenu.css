@@ -1,0 +1,90 @@
+.card {
+  width: 225px;
+  background-color: rgb(50, 58, 78);
+  box-shadow: 0 0 4px 0px;
+  border-radius: 10px;
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card .separator {
+  border-top: 1.5px solid #42434a;
+}
+
+.card .list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0px 10px;
+}
+
+.card .list .element {
+  display: flex;
+  align-items: center;
+  color: #7e8590;
+  gap: 10px;
+  transition: all 0.3s ease-out;
+  padding: 4px 7px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card .list .element svg {
+  width: 19px;
+  height: 19px;
+  transition: all 0.3s ease-out;
+}
+
+.card .list .element .label {
+  font-weight: 600;
+  color: white !important;
+}
+
+.card .list .element:hover {
+  background-color: #5353ff;
+  color: #ffffff;
+  transform: translate(1px, -1px);
+}
+.card .list .delete:hover {
+  background-color: #8e2a2a !important;
+}
+
+.card .list .seen:hover {
+  background-color: rgb(28, 185, 46) !important;
+}
+
+.card .list .star:hover {
+  background-color: rgba(238, 193, 14, 0.575) !important;
+}
+
+.card .list .element:active {
+  transform: scale(0.99);
+}
+
+.card .list:not(:last-child) .element:hover svg {
+  stroke: #ffffff;
+}
+
+.card .list:last-child svg {
+  stroke: #d8d2df;
+}
+.card .list:last-child .element {
+  color: #d8d2df;
+}
+
+.card .list:last-child .element:hover {
+  background-color: rgba(var(--theme-color-rgb) , 0.5);
+}
+
+.mobileMenu {
+  display: var(--mobileMenu);
+  z-index: 3;
+}
+
+.mobileMulti {
+  display: var(--mobileMulti);
+  z-index: 3;
+}
